@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Input and Forms</title>
+</head>
+
+<body>
+
+  <h3>Sample form</h3>
+  <form action="mailto:edwinamessenger@icloud.com" method="post">
+    <label>Your Name:</label>
+    <input type="text" name="Your Name:" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="Your Email:" value=""><br>
+    <label>Your Message:</label>
+    <textarea name="Your Message:" rows="5" cols="14"></textarea>
+    <input type="submit" name="" value="Submit"><br>
+  </form>
+
+
+  <!-->Note the name attributes. when you hit submit and it opens a new email from here, this is what it looks like :
+  Your Name:=Edwina
+Your Email:=edwinamessenger@icloud.com
+Your Message:=Hello, how are you?
+Note also the proper spacing and punctation in the message, This is because it's been changed to plain text!! If it wasn't in plain text, it would look like this:
+Your+Name%3A=Edwina&Your+Email%3A=edwinamessenger%40icloud.com&Your+Message%3A=Hello%2C+how+are+you%3F
+Basically gibberish. That's because it's in utf-8 (I think)<-->
+
+  <h3>Forms and inputs</h3>
+  <p>Inputs are areas or buttons where users can interact and enter data. With just html they are not yet functioning, that comes with javascript. Groups of input elements can be wrapped in a form element, which turns them into a set of data.
+    Javascript can then create functions with these data sets.</p>
+  <h4>Writing fields</h4>
+
+  <label>text</label>
+  <input type="text" name="" value="Enter text here"><br>
+  <label>email</label>
+  <input type="email" name="" value=""><br>
+  <label>tel</label>
+  <input type="tel" name="" value=""><br>
+  <label>url</label>
+  <input type="url" name="" value=""><br>
+  <label>number</label>
+  <input type="number" name="" value=""><br>
+  <label>search</label>
+  <input type="search" name="" value=""><br>
+  <label>password</label>
+  <input type="password" name="" value="password"><br>
+  <p><i>Basically all look the same, just a different type of data to be entered. This probably has some functionality with Javascript. Can write a message within each box, i.e. Enter Name or Your Email etc. by entering a value. Password input
+      element encodes writing in dots.</i></p>
+
+  <h4>Buttons</h4>
+
+  <label>checkbox</label>
+  <input type="checkbox" name="" value=""><br>
+  <label>radio</label>
+  <input type="radio" name="" value="">
+  <p><i>Use radio as a selection thing like checkbox; but if you make the name the same for all radios, only one can be clicked at a time:</i></p>
+  <h5>Is it raining?</h5>
+  <label>Yes:</label>
+  <input type="checkbox" name="" value="">
+  <label>No:</label>
+  <input type="checkbox" name="" value="">
+  <input type="submit" name="" value="submit"><br>
+  <h5>Is it raining?</h5>
+  <label>Yes:</label>
+  <input type="radio" name="yesno" value="">
+  <label>No:</label>
+  <input type="radio" name="yesno" value="">
+  <input type="submit" name="" value="submit"><br><br>
+
+  <label>submit</label>
+  <input type="submit" name="" value="Submit"><br>
+  <label>file</label>
+  <input type="file" name="" value=""><br>
+
+  <h4>Other</h4>
+  <label>date</label>
+  <input type="date" name="" value=""><br>
+  <label>month</label>
+  <input type="month" name="" value=""><br>
+  <label>week</label>
+  <input type="week" name="" value=""><br>
+  <label>range</label>
+  <input type="range" name="" value=""><br>
+  <label>color</label>
+  <input type="color" name="" value=""><br>
+  <label>hidden</label>
+  <input type="hidden" name="" value=""><br>
+  <label>image</label>
+  <input type="image" name="" value=""><br>
+<textarea name="name" rows="8" cols="80">Text area (not actually an input tag)</textarea>
+
+<form class="" action="index.html" method="post">
+
+</form>
+
+</body>
+
+</html>
